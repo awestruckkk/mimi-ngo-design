@@ -35,13 +35,13 @@ img {
     max-height: 12%;
 }
 
-@media(min-width:8000px){
+@media(max-width:8000px){
     body{
         background-size: 220%;
     }
 }
 
-@media(min-width:320px){
+@media(max-width:320px){
     body{
         background-size: 330%;
         font-size: 3.5vw;
