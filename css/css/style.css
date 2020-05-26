@@ -1,0 +1,317 @@
+/* TO DO
+* UPDATE TEXT FOR: EMMY, WELLNESS, ALBUM
+* ADD A TRANSITION BETWEEN PAGES... MAYBE 2 SECONDS DELAY?
+* ADD MENU ANIMATION 
+* WHEN SCROLLING ON MAIN PAGE, MOVE LOGO TO STATIC POSITION IN TOP RIGHT
+* WHEN SCROLLING ON OTHER PAGES, KEEP LOGO STATIC POSITION IN TOP RIGHT
+* CSS FOR MENU APPEARANCE
+*/
+
+:root{
+    --light-blue-color: #D9ECF2;
+    --navy-color: #002D40;
+    --red-color: #F56A79;
+    --master-padding: 250px 250px;
+    --secondary-padding: 200px 150px;
+    --mobile-padding: 150px 50px;
+    --header-padding: 50px;
+    --mobile-header-padding: 25px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: var(--navy-color);
+    color: var(--red-color);
+    font-family: Montserrat, sans-serif;
+    /* text-transform: uppercase; */
+    /* font-style: italic;  */
+    font-size: 0.7rem;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+b{
+    color: var(--navy-color);
+}
+
+h1{
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+a img:hover{
+    opacity:0.4 !important;
+    transition: 1.2s ease;
+}
+
+p{
+    font-size: 0.5rem;
+}
+
+/* IMAGES */
+img{
+    width: 100%;
+}
+
+.main-logo img{
+    width: 300px;
+}
+
+.portrait img{ 
+    width: 250px;
+    padding-bottom: var(--header-padding);
+}
+
+.social img{
+    width: 25px;
+    padding-top: var(--header-padding);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.section-bio img{
+    width: 120px;
+    height: 31px;
+    vertical-align: middle;
+}
+
+.section-work img{
+    width: 100px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+.section-skills img{
+    width: 100px;
+    height: 72px;
+    vertical-align: middle;
+}
+
+.section-contact img{
+    width: 100px;
+    height: 56px;
+    vertical-align: middle;
+}
+
+.section-two-columns-responsive img{
+    padding-bottom: 20px;
+}
+
+/* COLORED SECTIONS */
+.section-red-primary{
+    background-color: var(--red-color);
+    color: var(--light-blue-color);
+    padding: var(--master-padding);
+}
+
+.section-light-primary{
+    background-color: var(--light-blue-color);
+    color: var(--navy-color);
+    padding: var(--master-padding);
+}
+
+.section-navy-primary{
+    background-color: var(--navy-color);
+    color: var(--red-color);
+    padding: var(--master-padding);
+}
+
+.section-red-secondary{
+    background-color: var(--red-color);
+    color: var(--navy-color);
+    padding: var(--master-padding);
+}
+
+.section-light-secondary{
+    background-color: var(--light-blue-color);
+    color: var(--red-color);
+    padding: var(--master-padding);
+}
+
+.section-navy-secondary{
+    background-color: var(--navy-color);
+    color: var(--light-blue-color);
+    padding: var(--master-padding);
+}
+
+/* COLUMNS */
+.section-one-column{
+    display: grid;
+    grid-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.section-two-columns{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-three-columns{
+    padding-top: var(--header-padding);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section-eight-columns{
+    padding-top: var(--header-padding);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.section-two-columns-responsive{
+     column-count: 2;
+     column-gap: 20px;
+}
+
+/* HEADER */
+.header-logo{
+    flex: 50%;
+    text-align: right;
+    padding-top: 17px;
+}
+
+.header-logo img{
+    width: 45px;
+}
+
+.header{
+  
+    padding: 10px 30px 0px 30px;
+    text-align: left;
+    display: flex;
+}
+
+.header-light{
+    background-color: var(--light-blue-color);
+    color: var(--navy-color);
+}
+
+.header-red{
+    background-color: var(--red-color);
+    color: var(--light-blue-color);
+}
+
+.header-navy{
+    background-color: var(--navy-color);
+    color: var(--red-color);
+}
+
+/* FOOTER */
+.footer{
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-navy{
+    background: var(--navy-color);
+}
+
+.footer-light{
+    background: var(--light-blue-color);
+}
+
+.footer-red{
+    background: var(--red-color);
+}
+
+.footer-home img{
+    height: 20px;
+    width: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-arrow img{
+    height: 20px;
+    width: 43px;
+}
+
+/* Smaller Browser */
+@media(max-width:1100px){
+    .section-red-primary{
+        padding: var(--secondary-padding);
+    }
+    
+    .section-light-primary{
+        padding: var(--secondary-padding);
+    }
+    
+    .section-navy-primary{
+        padding: var(--secondary-padding);
+    }
+    
+    .section-red-secondary{
+        padding: var(--secondary-padding);
+    }
+    
+    .section-light-secondary{
+        padding: var(--secondary-padding);
+    }
+    
+    .section-navy-secondary{
+        padding: var(--secondary-padding);
+    }
+
+    .section-eight-columns{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:700px){
+    .br{
+        display:none;
+    }
+
+    .section-red-primary{
+        padding: var(--mobile-padding);
+    }
+    
+    .section-light-primary{
+        padding: var(--mobile-padding);
+    }
+    
+    .section-navy-primary{
+        padding: var(--mobile-padding);
+    }
+    
+    .section-red-secondary{
+        padding: var(--mobile-padding);
+    }
+    
+    .section-light-secondary{
+        padding: var(--mobile-padding);
+    }
+    
+    .section-navy-secondary{
+        padding: var(--mobile-padding);
+    }
+
+    .main-logo img{
+        width: 200px;
+    }
+
+    .portrait img{ 
+        padding-bottom: var(--mobile-header-padding);
+    }
+
+    .section-three-columns{
+        padding-top: var(--mobile-header-padding);
+    }
+}
