@@ -244,7 +244,7 @@ img{
 }
 
 /* Smaller Browser */
-@media(max-width:1100px){
+/* @media(max-width:1100px){
     .section-red-primary{
         padding: var(--secondary-padding);
     }
@@ -272,10 +272,10 @@ img{
     .section-eight-columns{
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} */
 
 /* Mobile */
-@media(max-width:700px){    
+/* @media(max-width:700px){    
     .br{
         display:none;
     }
@@ -315,13 +315,12 @@ img{
     .section-three-columns{
         padding-top: var(--mobile-header-padding);
     }
-}
-
+} */
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 480px){
+@media (max-width: 480px){
     body{
-        font-size: 1.7rem;
+        font-size: 2.3rem;
         line-height: 1.6em;
     }
     
