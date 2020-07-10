@@ -16,9 +16,9 @@
     --red-color: #F56A79;
     --master-padding: 250px 250px;
     --secondary-padding: 200px 150px;
-    --mobile-padding: 150px 50px;
+    --mobile-padding: 25px 25px;
     --header-padding: 50px;
-    --mobile-header-padding: 25px;
+    --mobile-header-padding: 10px;
 }
 
 body{
@@ -318,15 +318,15 @@ img{
 } */
 
 /* Mobile */
-@media (max-width: 480px){
+@media (max-width: 600px){
     body{
-        font-size: 3.0rem;
-        line-height: 2.0em;
+        font-size: 5.0rem;
+        line-height: 4.0em;
     }
     
     h1{
-        font-size: 3.0rem;
-        line-height: 2.0em;
+        font-size: 5.0rem;
+        line-height: 4.0em;
     }
 
     .br{
