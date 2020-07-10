@@ -368,4 +368,18 @@ img{
     .section-three-columns{
         padding-top: var(--mobile-header-padding);
     }
+
+    .footer-home img{
+        height: 30px;
+        width: 27px;
+    }
+    
+    .footer-arrow img{
+        height: 30px;
+        width: 64px;
+    }
+
+    .header-logo img{
+        width: 55px;
+    }
 }
