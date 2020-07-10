@@ -320,13 +320,13 @@ img{
 /* Mobile */
 @media (max-width: 480px){
     body{
-        font-size: 2.3rem;
-        line-height: 1.6em;
+        font-size: 3.0rem;
+        line-height: 2.0em;
     }
     
     h1{
-        font-size: 1.6rem;
-        line-height: 1.4em;
+        font-size: 3.0rem;
+        line-height: 2.0em;
     }
 
     .br{
@@ -358,7 +358,7 @@ img{
     }
 
     .main-logo img{
-        width: 200px;
+        width: 300px;
     }
 
     .portrait img{ 
