@@ -362,6 +362,7 @@ img{
     }
 
     .portrait img{ 
+            width: 150px;
         padding-bottom: var(--mobile-header-padding);
     }
 
