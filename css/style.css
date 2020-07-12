@@ -362,12 +362,20 @@ img{
     }
 
     .portrait img{ 
-            width: 150px;
+        width: 150px;
         padding-bottom: var(--mobile-header-padding);
+    }
+
+    .section-two-columns{
+        grid-template-columns: 1fr;
     }
 
     .section-three-columns{
         padding-top: var(--mobile-header-padding);
+    }
+
+    .section-eight-columns{
+        grid-template-columns: repeat (2, 1fr);
     }
 
     .footer-home img{
