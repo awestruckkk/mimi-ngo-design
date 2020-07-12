@@ -367,15 +367,20 @@ img{
     }
 
     .section-two-columns{
-        grid-template-columns: repeat (1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-two-columns-responsive{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .section-three-columns{
         padding-top: var(--mobile-header-padding);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .section-eight-columns{
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-home img{
