@@ -371,12 +371,13 @@ img{
     }
 
     .section-two-columns-responsive{
-        grid-template-columns: repeat(1, 1fr);
+        column-count: 1;
+        column-gap: 0px;
     }
 
     .section-three-columns{
         padding-top: var(--mobile-header-padding);
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .section-eight-columns{
