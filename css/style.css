@@ -333,13 +333,10 @@ img{
         display:none;
     }
 
-    .section, .footer{
-        margin-top: -2px;
-        margin-bottom: -2px;
-    }
-
     .section-red-primary, .section-light-primary, .section-navy-primary, .section-red-secondary, .section-light-secondary, .section-navy-secondary{
         padding: var(--mobile-padding);
+        margin-top: -2px;
+        margin-bottom: -2px;
     }
 
     .main-logo img{
@@ -367,6 +364,11 @@ img{
 
     .section-eight-columns{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer{
+        margin-top: -2px;
+        margin-bottom: -2px;
     }
 
     .footer-home img{
