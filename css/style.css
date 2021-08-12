@@ -382,8 +382,21 @@ img{
         line-height: 1.2em;
     }
 
+    h2{
+        font-size: 1.2rem;
+        line-height: 1.2em;
+    }
+
     .br{
         display:none;
+    }
+
+    a.button{
+        margin: 30px;
+    }
+
+    blockquote{
+        padding: 0px;
     }
 
     .section-red-primary, .section-light-primary, .section-navy-primary, .section-red-secondary, .section-light-secondary, .section-navy-secondary{
