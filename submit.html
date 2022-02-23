@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimi Ngo Design</title>
+</head>
+<body>
+    <h1>Thank you!</h1>
+    <br>Thank you for your inquiry.
+    <br>You will receive a response within 24 hours.
+    <br>Have a nice day!
+    <script>
+        const resultsList = document.getElementById("results")
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement("br"))
+        })
+    </script>
+</body>
+</html>

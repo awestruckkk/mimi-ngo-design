@@ -92,7 +92,55 @@
         <div class="section-contact">
         <H1>LET'S DO THIS  <img src="/img/skills/things.png">.</H1>
         </div>
-        Send me an email at <b>mimingodesign@gmail.com</b>.
+        <!-- Remember to update this to mimingodesign. Currently it is the local host. -->
+        <div class="form-container">
+            <form action="https://formsubmit.co/mimingodesign@gmail.com" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/submit.html">
+                <input type="hidden" name="_subject" value="New Design Inquiry">
+                <input type="hidden" name="_template" value="box">
+                <div class="input-container">
+                    <label for="name">name *</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">email *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="business">business name *</label>
+                    <input name="business" id="business" required>
+                </div>
+                <div class="input-container">
+                    <label for="website">what is your website/instagram handle?</label>
+                    <input name="website" id="website">
+                </div>
+                <div class="input-container">
+                    <label for="location">where are you based? *</label>
+                    <input name="location" id="location" required>
+                </div>
+                <div class="input-container">
+                    <label for="business-details">tell me about your business and why you’re passionate about it.</label>
+                    <textarea name="business-details" id="business-details" ></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="vision">what’s your vision for your brand identity or project? *</label>
+                    <textarea name="vision" id="vision" required></textarea>
+                </div>
+                <div class="input-container">
+                    <label for="start-date">when is your ideal start date?</label>
+                    <input name="start-date" id="start-date">
+                </div>
+                <div class="input-container">
+                    <label for="referral">how did you hear about me? *</label>
+                    <input name="referral" id="referral" required>
+                </div>
+                <div class="input-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
