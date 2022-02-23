@@ -91,6 +91,11 @@ blockquote h3{
     padding-bottom: 3rem;
 }
 
+.skills-container h3 {
+    color: var(--light-blue-color);
+    line-height: 0.8rem;
+}
+
 /* BUTTONS */
 a.button {
     padding: 1rem 2rem;
