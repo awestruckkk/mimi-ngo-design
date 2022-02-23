@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700;1,800&display=swap');
+@import url("https://use.typekit.net/kqb6wga.css");
 
 /* TO DO
 * UPDATE TEXT FOR: EMMY, WELLNESS, ALBUM
@@ -24,14 +23,14 @@
 body{
     background-color: var(--navy-color);
     color: var(--red-color);
-    font-family: 'Montserrat', sans-serif;
-    /* text-transform: uppercase; */
-    /* font-style: italic;  */
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 1.5em;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin: 0;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 b{
@@ -39,15 +38,26 @@ b{
 }
 
 h1{
-    font-size: 1.2rem;
-    line-height: 1.2em;
+    font-size: 3.5rem;
+    line-height: 3rem;
     text-transform: uppercase;
-    font-style: italic;
+    font-family: fatfrank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2{
-    font-size: 0.9rem;
-    line-height: 1.4em;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: lowercase;
+    font-family: fatfrank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -68,22 +78,31 @@ p{
 blockquote{
     font-size: 1rem;
     line-height: 1.3rem;
-    padding: 50px;
+    padding-top: 5rem;
 }
 
 blockquote h3{
-    font-style: italic;
-    font-size: 0.9rem;
-    line-height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
     text-transform: uppercase;
+    font-family: fatfrank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 3rem;
 }
 
 /* BUTTONS */
 a.button {
-    padding: 10px 15px;
-    margin: 15px;
+    padding: 1rem 2rem;
+    margin: 2rem 0 0 0;
     text-transform: uppercase;
     display: inline-block;
+    border-radius: 2px;
+    font-weight: 700;
+    transition: 0.5s;
+    font-family: fatfrank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a.button-red{
@@ -113,8 +132,12 @@ img{
     width: 100%;
 }
 
+h2 img {
+    margin: 0 0.5rem;
+}
 .main-logo img{
-    width: 300px;
+    width: 400px;
+    margin: 3rem 0;
 }
 
 .portrait img{ 
@@ -227,19 +250,24 @@ img{
 }
 
 .section-two-columns-responsive{
-     column-count: 2;
-     column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
 }
 
 /* HEADER */
-.header-logo{
+.header-logo-right{
     flex: 50%;
     text-align: right;
     padding-top: 17px;
 }
 
-.header-logo img{
+.header-logo-right img{
     width: 45px;
+}
+
+.header-logo-left{
+    width: 9rem;
+    padding-top: 17px;
 }
 
 .header{
@@ -321,25 +349,30 @@ img{
 .form-container label {
     text-transform: uppercase;
     color: var(--navy-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .form-container button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: fatfrank, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
     background-color: var(--navy-color);
     color: var(--light-blue-color);
     border: 0px;
     padding: 1rem 2rem;
+    margin: 1rem 0 0 0;
     border-radius: 2px;
     transition: 0.5s;
+    font-size: 1.3rem;
+    display: inline-block;
 }
 
 .form-container button:hover {
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background-color: var(--red-color);
-    color: var(--navy-color);
+    background-color: var(--light-blue-color);
+    color: var(--red-color);
     border: 0px;
     padding: 1rem 2rem;
 }
@@ -426,11 +459,16 @@ img{
     }
     
     h1{
-        font-size: 1.6rem;
-        line-height: 1.2em;
+        font-size: 3rem;
+        line-height: 2.8rem;
     }
 
     h2{
+        font-size: 1.7rem;
+        line-height: 1.6rem;
+    }
+
+    h3{
         font-size: 1.2rem;
         line-height: 1.2em;
     }
