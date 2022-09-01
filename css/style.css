@@ -67,7 +67,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 a img:hover{
-    opacity:0.4 !important;
+    opacity:0.5 !important;
     transition: 1.2s ease;
 }
 
@@ -140,6 +140,7 @@ img{
 h2 img {
     margin: 0 0.5rem;
 }
+
 .main-logo img{
     width: 400px;
     margin: 3rem 0;
@@ -150,11 +151,23 @@ h2 img {
     padding-bottom: var(--header-padding);
 }
 
+.thumbnail {
+    transition: transform .05s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05); 
+}
+
 .social img{
     width: 25px;
     padding-top: var(--header-padding);
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.section-bio {
+    padding: 0px 150px;
 }
 
 .section-bio img{
@@ -429,9 +442,13 @@ h2 img {
 } 
 
 /* Mobile */
-@media (max-width:700px){
+@media (max-width:850px){
     .br{
         display:none;
+    }
+
+    .section-bio {
+        padding: 0px;
     }
 
     .section-red-primary{
@@ -467,6 +484,9 @@ h2 img {
     }
 
     .section-three-columns{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
         padding-top: var(--mobile-header-padding);
     }
 } 
@@ -502,6 +522,10 @@ h2 img {
     }
 
     blockquote{
+        padding: 0px;
+    }
+
+    .section-bio {
         padding: 0px;
     }
 
