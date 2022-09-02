@@ -1,5 +1,14 @@
 @import url("https://use.typekit.net/kqb6wga.css");
 
+/* TO DO
+* UPDATE TEXT FOR: EMMY, WELLNESS, ALBUM
+* ADD A TRANSITION BETWEEN PAGES... MAYBE 2 SECONDS DELAY?
+* ADD MENU ANIMATION 
+* WHEN SCROLLING ON MAIN PAGE, MOVE LOGO TO STATIC POSITION IN TOP RIGHT
+* WHEN SCROLLING ON OTHER PAGES, KEEP LOGO STATIC POSITION IN TOP RIGHT
+* CSS FOR MENU APPEARANCE
+*/
+
 :root{
     --light-blue-color: #D9ECF2;
     --navy-color: #002D40;
@@ -121,26 +130,6 @@ a.button-navy:hover {
     background-color: var(--red-color);
     color: var(--navy-color);
     transition-delay: 100ms;
-}
-
-/* MENU */
-ul {
-    list-style-type: none;
-    position: fixed;
-    bottom: 40%;
-    right: 50px;
-    text-align: right;
-}
-
-.menu a {
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.menu a:hover {
-    color: var(--light-blue-color);
 }
 
 /* IMAGES */
